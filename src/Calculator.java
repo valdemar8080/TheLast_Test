@@ -8,8 +8,7 @@ public class Calculator {
     }
 
     public int max (Integer[] arg) throws EmptyArrayException {
-        if (arg == null || arg.length == 0)
-            throw new EmptyArrayException();
+        
         int result = arg[0];
         for(int i: arg){
             Integer i1 = i;
@@ -19,6 +18,7 @@ public class Calculator {
                 }
             }
         }
+        System.out.println();
         return result;
     }
 }
